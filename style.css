@@ -804,10 +804,8 @@ a:active {
     color: #ffffff;
     text-transform: uppercase;
     background: none;
-    /*padding: 10px 18px;*/
     margin: 10px 0;
-    padding: 11px 18px 9px 18px;
-        
+    padding: 11px 18px 9px 18px;        
 
     -webkit-transition-property: background border;
     -webkit-transition-duration: .3s;
@@ -992,8 +990,6 @@ a:active {
 
 
 
-
-
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
@@ -1027,7 +1023,41 @@ a:active {
     font-weight: 700;
     color: #222222;
     text-transform: uppercase;
-    border-bottom: 2px solid #1f9970;
+    border-bottom: 2px solid #1f9970;        
+
+    -webkit-transition-property: background border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.all-news:link,
+.all-news:visited {
+    color: #222222;
+}
+
+.all-news:active,
+.all-news.active {
+    color: #1f9970;
+}
+
+.all-news:hover {
+    color: #1f9970; 
 }
 
 .news-thumbnails {
@@ -1406,13 +1436,14 @@ footer {
 .webstdio-box h2 {
     display: inline-block;
     vertical-align: middle;
+    width: 77%;
     font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
     color: #eeeeee;
     text-align: right;
-    padding: 0 4% 0 0;
+    padding: 0 7% 0 0;
 
     -webkit-transition-property: color;
     -webkit-transition-duration: .3s;
@@ -1452,7 +1483,10 @@ footer {
 .webstdio-box img {
     display: inline-block;
     vertical-align: middle;
-
+    width: 23%;
+    min-width: 40px;
+    max-width: auto;
+    height: auto;
     -webkit-transition-property: transform;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
