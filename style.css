@@ -1012,7 +1012,7 @@ a:active {
     vertical-align: bottom;
     font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 40px;
     font-weight: 700;
     color: #222222;
     padding: 0 3% 0 0;
@@ -1027,7 +1027,7 @@ a:active {
     font-weight: 700;
     color: #222222;
     position: relative;
-    top: -6px;
+    top: -8px;
     text-transform: uppercase;
     border-bottom: 2px solid #1f9970;        
 
