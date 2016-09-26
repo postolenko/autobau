@@ -584,7 +584,7 @@ a:active {
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 10px 6px 10px 12px;
+    padding: 11px 6px 11px 18px;
     border-top: 2px solid #1f9970;
     border-bottom: 2px solid #1f9970;
     border-left: 2px solid #1f9970;
@@ -629,32 +629,32 @@ a:active {
     display: block;
     content: "";
     width: 2px;
-    height: 73%;
+    height: 66%;
     position: absolute;
-    top: -12%;
-    right: -6%;
+    top: -10%;
+    right: -5%;
     background: rgba(21, 153, 112, 1);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
 }
 
 .technik-exist-link:after {
     display: block;
     content: "";
     width: 2px;
-    height: 73%;
+    height: 66%;
     position: absolute;
-    bottom: -12%;
-    right: -6%;
+    bottom: -10%;
+    right: -5%;
     background: rgba(21, 153, 112, 1);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
 }
 
 .technik-exist-link span {
@@ -1277,7 +1277,7 @@ footer {
     color: #222222;
     text-transform: uppercase;
     position: relative;
-    padding: 10px 6px 10px 12px;
+    padding: 10px 5px 10px 15px;
     border-top: 2px solid #1f9970;
     border-bottom: 2px solid #1f9970;
     border-left: 2px solid #1f9970;
@@ -1321,32 +1321,32 @@ footer {
     display: block;
     content: "";
     width: 2px;
-    height: 73%;
+    height: 66%;
     position: absolute;
-    top: -12%;
-    right: -12px;
+    top: -10%;
+    right: -19%;
     background: rgba(21, 153, 112, 1);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
 }
 
 .partners li.all-item a:after {
     display: block;
     content: "";
     width: 2px;
-    height: 73%;
+    height: 66%;
     position: absolute;
-    bottom: -12%;
-    right: -12px;
+    bottom: -10%;
+    right: -19%;
     background: rgba(21, 153, 112, 1);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
 }
 
 .footer-row-bottom {
