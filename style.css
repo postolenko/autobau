@@ -461,6 +461,20 @@ a:active {
     border: 1px solid transparent;
     text-align: right;
     overflow: hidden;
+}
+
+.header-top-row .search-form input[type=text] {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 22px;
+    width: 86%;
+    border: 1px solid transparent;
+    font-family: "Arial", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #00314f;
+    text-align: left;
 
     -webkit-transition-property: border;
     -webkit-transition-duration: .3s;
@@ -483,26 +497,12 @@ a:active {
     transition-timing-function: ease;
 }
 
-.header-top-row .search-form-box:hover .search-form {
-    border: 1px solid #00314f;
+.header-top-row .search-form-box:hover .search-form input[type=text] {
+     border-bottom: 2px solid rgba(31, 153, 112, 1);
 }
 
-.header-top-row .search-form-box .search-form.active {
-    border: 1px solid #00314f;
-}
-
-.header-top-row .search-form input[type=text] {
-    display: inline-block;
-    vertical-align: middle;
-    min-height: 22px;
-    width: 86%;
-    border: 1px solid transparent;
-    font-family: "Arial", Arial, Verdana, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: normal;
-    color: #00314f;
-    text-align: left;
+.header-top-row .search-form-box .search-form.active input[type=text] {
+     border-bottom: 2px solid rgba(31, 153, 112, 1);
 }
 
 .header-top-row .search-form-box button {
@@ -624,38 +624,6 @@ a:active {
 .technik-exist-link:hover {
     color: #1f9970;
 }
-
-/*.technik-exist-link:before {
-    display: block;
-    content: "";
-    width: 2px;
-    height: 66%;
-    position: absolute;
-    top: -10%;
-    right: -5%;
-    background: rgba(21, 153, 112, 1);
-    -webkit-transform: rotate(-35deg);
-    -moz-transform: rotate(-35deg);
-    -ms-transform: rotate(-35deg);
-    -o-transform: rotate(-35deg);
-    transform: rotate(-35deg);
-}
-
-.technik-exist-link:after {
-    display: block;
-    content: "";
-    width: 2px;
-    height: 66%;
-    position: absolute;
-    bottom: -10%;
-    right: -5%;
-    background: rgba(21, 153, 112, 1);
-    -webkit-transform: rotate(35deg);
-    -moz-transform: rotate(35deg);
-    -ms-transform: rotate(35deg);
-    -o-transform: rotate(35deg);
-    transform: rotate(35deg);
-}*/
 
 .technik-exist-link span {
     display: table-cell;
