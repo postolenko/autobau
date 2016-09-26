@@ -584,11 +584,11 @@ a:active {
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 11px 6px 11px 18px;
-    border-top: 2px solid #1f9970;
-    border-bottom: 2px solid #1f9970;
-    border-left: 2px solid #1f9970;
+    padding: 13px 24px 12px 18px;
     position: relative;
+    background-image: url(img/technik_btn_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     -webkit-transition-property: color;
     -webkit-transition-duration: .3s;
@@ -625,7 +625,7 @@ a:active {
     color: #1f9970;
 }
 
-.technik-exist-link:before {
+/*.technik-exist-link:before {
     display: block;
     content: "";
     width: 2px;
@@ -655,7 +655,7 @@ a:active {
     -ms-transform: rotate(35deg);
     -o-transform: rotate(35deg);
     transform: rotate(35deg);
-}
+}*/
 
 .technik-exist-link span {
     display: table-cell;
@@ -1225,7 +1225,12 @@ footer {
     display: inline-block;
     vertical-align: middle;
     width: auto;
+    /*padding: 15px 1.2%;*/
     padding: 15px;
+}
+
+.partners li:last-child {
+    padding-right: 0;
 }
 
 .partners li a  {
@@ -1279,10 +1284,10 @@ footer {
     color: #222222;
     text-transform: uppercase;
     position: relative;
-    padding: 10px 5px 10px 15px;
-    border-top: 2px solid #1f9970;
-    border-bottom: 2px solid #1f9970;
-    border-left: 2px solid #1f9970;
+    padding: 10px 18px 10px 14px;
+    background-image: url(img/all_partners_btn_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     -webkit-transition-property: color;
     -webkit-transition-duration: .3s;
@@ -1319,7 +1324,7 @@ footer {
     color: #1f9970;
 }
 
-.partners li.all-item a:before {
+/*.partners li.all-item a:before {
     display: block;
     content: "";
     width: 2px;
@@ -1349,7 +1354,7 @@ footer {
     -ms-transform: rotate(35deg);
     -o-transform: rotate(35deg);
     transform: rotate(35deg);
-}
+}*/
 
 .footer-row-bottom {
     background: rgba(34, 34, 34 , 1);
