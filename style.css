@@ -734,6 +734,10 @@ a:active {
     text-align: right;
 }
 
+.header-contacts-col.col-3 p {
+    padding: 0;
+}
+
 .header-contacts-col.col-3 .fa-star {
     font-size: 11px;
     line-height: 24px;
@@ -804,7 +808,7 @@ a:active {
     color: #ffffff;
     text-transform: uppercase;
     background: none;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     padding: 11px 18px 9px 18px;        
 
     -webkit-transition-property: background border;
@@ -849,7 +853,7 @@ a:active {
 .header-section .categories.thumbnails {
     width: 103%;
     margin: 0 0 0 -1.5%;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .header-section .thumbnail {
@@ -996,7 +1000,7 @@ a:active {
 
 .news-section {
     background: rgba(247, 247, 247, 1);
-    padding: 50px 0 10px 0;
+    padding: 50px 0 25px 0;
 }
 
 .block-news {
