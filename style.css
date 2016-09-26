@@ -1009,10 +1009,10 @@ a:active {
 
 .block-news h2 {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: bottom;
     font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 36px;
     font-weight: 700;
     color: #222222;
     padding: 0 3% 0 0;
@@ -1026,6 +1026,8 @@ a:active {
     line-height: 18px;
     font-weight: 700;
     color: #222222;
+    position: relative;
+    top: -6px;
     text-transform: uppercase;
     border-bottom: 2px solid #1f9970;        
 
