@@ -988,7 +988,7 @@ a:active {
     transition-timing-function: ease;
 }
 
-.header-section .thumbnail:hover h3:before {
+.header-section .thumbnail .category:hover h3:before {
     top: 0;
 }
 
