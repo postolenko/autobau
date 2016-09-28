@@ -2831,7 +2831,7 @@ footer {
     font-weight: normal;
     color: #eeeeee;
     text-align: right;
-    padding: 0 10px 0 0;
+    /*padding: 0 10px 0 0;*/
 
     -webkit-transition-property: color;
     -webkit-transition-duration: .3s;
@@ -2875,6 +2875,7 @@ footer {
     max-width: 40px;
     max-width: auto;
     height: auto;
+    margin: 0 0 0 10px;
     -webkit-transition-property: transform;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
