@@ -2824,7 +2824,7 @@ footer {
 .webstdio-box h2 {
     display: inline-block;
     vertical-align: middle;
-    width: 77%;
+    width: 78%;
     font-family: "Arial", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -2871,11 +2871,11 @@ footer {
 .webstdio-box img {
     display: inline-block;
     vertical-align: middle;
-    width: 23%;
+    width: 22%;
     max-width: 40px;
     max-width: auto;
     height: auto;
-    /*margin: 0 0 0 10px;*/
+
     -webkit-transition-property: transform;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
