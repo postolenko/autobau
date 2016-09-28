@@ -427,6 +427,7 @@ a:active {
     background-image: url(img/header_bg.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .main-page-header {
@@ -458,15 +459,195 @@ a:active {
     width: 100%;
 }
 
+/*.responsive-header-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 82%;
+}*/
+
+
+
 .header-top-row .header-col.header-nav-col {
     display: inline-block;
     vertical-align: top;
     width: 64%;
     text-align: center;
+    background: rgba(255, 255, 255, 1);
 }
+
+
+/* -- For responsive - Search Box -- */
+
+.header-search-responsive {
+    display: none;
+    width: 100%;
+    height: 50px;
+    padding: 15px 0 0 0;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid #1f9970;
+}
+
+.header-search-responsive .search-form {
+    display: table;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+}
+
+.header-search-responsive .search-form button {
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 1);
+}
+
+.header-search-responsive .search-form button svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header-search-responsive .search-form button[type=button] path {
+    fill: #00314f;
+
+    -webkit-transition-property: fill;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: fill;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: fill;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: fill;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: fill;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.header-search-responsive .search-form button[type=button]:link path,
+.header-search-responsive .search-form button[type=button]:visited path {
+    fill: #00314f;
+}
+
+.header-search-responsive .search-form button[type=button]:hover path,
+.header-search-responsive .search-form button[type=button]:active path {
+    fill: #1f9970;
+}
+
+.header-search-responsive .search-form input[type=text] {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 16px !important;
+    line-height: 20px;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 1);
+}
+
+
+.respmenubtn-box {
+    display: none;
+    width: 28%;
+    float: right;
+    padding: 13px 0 0 2%;
+    text-align: right;
+}
+
+.respmenubtn {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.respmenubtn span {
+    display: block;
+    width: 30px;
+    height: 0;
+    border: 2px solid #00314f;
+    margin: 0 0 5px 0;
+
+    -webkit-transition-property: border transform;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border transform;
+    -moz-transition-duration: 0.3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border transform;
+    -ms-transition-duration: 0.3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border transform;
+    -o-transition-duration: 0.3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.respmenubtn span:last-child {
+    margin: 0;
+}
+
+.respmenubtn:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+.respmenubtn:hover span {
+    border: 2px solid #999999;
+}
+
+.respmenubtn.active span {
+    width: 35px;
+    border: 2px solid #999999;
+}
+
+.respmenubtn.active span:last-child {
+    display: none;
+}
+
+.respmenubtn.active span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 5px 0 0 0;
+}
+
+.respmenubtn.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -4px;
+}
+
+
+
+
+/* -- /For responsive - Search Box -- */
+
+
+
+
 
 .main-nav {
     margin: 0 auto;
+    padding: 0;
+    /*background: rgba(255, 255, 255, 1);*/
 }
 
 .main-nav li {
@@ -572,6 +753,7 @@ a:active {
 .header-top-row .search-col {
     width: 18%;
     text-align: right;
+    background: rgba(255, 255, 255, 1);
 }
 
 .header-top-row .search-col .search-form-box {
@@ -2555,8 +2737,8 @@ footer {
     padding: 30px 0;
 }
 
-.three-cols-box {
-
+.three-cols-box .footer-col {
+    padding: 10px 0;
 }
 
 .three-cols-box .footer-col.col-1 {
@@ -2571,6 +2753,7 @@ footer {
     line-height: 20px;
     font-weight: normal;
     color: #eeeeee;
+    padding: 0;
 }
 
 .three-cols-box .footer-col.col-2 {
@@ -2648,7 +2831,7 @@ footer {
     font-weight: normal;
     color: #eeeeee;
     text-align: right;
-    padding: 0 7% 0 0;
+    padding: 0 10px 0 0;
 
     -webkit-transition-property: color;
     -webkit-transition-duration: .3s;
@@ -2689,7 +2872,7 @@ footer {
     display: inline-block;
     vertical-align: middle;
     width: 23%;
-    min-width: 40px;
+    max-width: 40px;
     max-width: auto;
     height: auto;
     -webkit-transition-property: transform;

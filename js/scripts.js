@@ -12,6 +12,8 @@ $(document).ready(function() {
 
     // });
 
+    getMainNavHeight();
+
 
     $(window).resize(function() {
 
@@ -25,6 +27,8 @@ $(document).ready(function() {
         });
 
         // getMainNavLinkHeight();
+
+        getMainNavHeight();
 
 
     });
@@ -138,10 +142,10 @@ $(document).ready(function() {
 
 // ---------------------------------------------------------
 
-    var indexProductPhoto;
-    var imgSrcAttr;
-
     $(function() {
+
+        var indexProductPhoto;
+        var imgSrcAttr;
 
         $(".slider-big .zoom-btn").click(function() {
 
@@ -162,6 +166,43 @@ $(document).ready(function() {
         });
 
     });
+
+
+// ----------------------------------------------------------
+
+    $(function() {
+
+        $(".respmenubtn").click(function() {            
+
+            $(".header-top-row .header-nav-col").css({"top" : $(".header-top-row").outerHeight(true) + "px" });
+
+            if( $(".respmenubtn").hasClass("active") ) {
+
+                $(".header-top-row .header-nav-col").css({"top" : -$(".header-top-row .header-nav-col").outerHeight(true) + 10 + "px" });
+
+            }
+
+            $(".respmenubtn").toggleClass("active");
+
+            getMainNavHeight();            
+
+        });
+
+    });
+
+
+    function getMainNavHeight() {
+
+
+        if( $(".header-top-row .header-nav-col").offset().top + $(".header-top-row .header-nav-col").outerHeight(true) >= $(window).height() ) {
+
+            $(".header-top-row .header-nav-col").height( $(window).height() - $(".logo-col").height() );
+
+            $(".main-nav").height( $(".header-top-row .header-nav-col").height() - $(".header-search-responsive").height() );
+
+        }
+
+    }
 
 
 });

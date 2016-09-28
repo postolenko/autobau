@@ -7,11 +7,116 @@
 
 @media only screen and (max-width: 1024px) {
 
+	.row {
+		padding: 0 2%;
+	}
 
 }
 
 
-@media only screen and (max-width: 737px) {
+@media only screen and (max-width: 768px) {
+
+	.respmenubtn-box {
+		display: block;
+	}
+
+	.header-top-row .header-col.header-nav-col {
+		display: block;
+		width: 100%;
+		position: absolute;
+		top: -100%;
+		left: 0;
+		background: rgba(255, 255, 255, 1);
+		z-index: 12;
+		overflow: hidden;
+	
+	    -webkit-transition-property: top;
+	    -webkit-transition-duration: .3s;
+	    -webkit-transition-timing-function: ease;
+
+	    -moz-transition-property: top;
+	    -moz-transition-duration: .3s;
+	    -moz-transition-timing-function: ease;
+
+	    -ms-transition-property: top;
+	    -ms-transition-duration: .3s;
+	    -ms-transition-timing-function: ease;
+
+	    -o-transition-property: top;
+	    -o-transition-duration: .3s;
+	    -o-transition-timing-function: ease;
+
+	    transition-property: top;
+	    transition-duration: .3s;
+	    transition-timing-function: ease;
+	}
+
+	.header-top-row .header-col.header-nav-col.active {
+		top: 0;
+	}
+
+	.header-top-row .search-col {
+		display: none;
+	}
+
+	.header-search-responsive {
+		display: block;
+	}
+
+	.main-nav li {
+		padding: 15px 2.5%;
+		top: 0;
+	}
+
+	.main-nav li a {
+		min-height: auto;
+		line-height: 14px;
+	}
+
+	.main-nav li a:after {
+		display: none;
+	}
+
+
+
+	/*------*/
+
+	.header-contacts-col.col-1 {
+		width: 34%;
+		min-width: 230px;
+	}
+
+	.header-contacts-col.col-2 {
+		width: 36%;
+	}
+
+	.header-contacts-col.col-3 {
+		width: 30%;
+	}
+
+
+
+
+
+
+	/*------*/
+
+	.three-cols-box .footer-col.col-1,
+	.three-cols-box .footer-col.col-2,
+	.three-cols-box .footer-col.col-3 {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.webstdio-box {
+		float: none;
+	}
+
+	.webstdio-box h2 {
+		width: auto;
+	}
+
 
 
 
@@ -21,6 +126,33 @@
 
 @media only screen and (max-width: 480px) {
 
+	.header-top-row .header-col.header-nav-col {
+		background: rgba(255, 255, 255, .9);
+	}
 
+	.main-nav {
+		width: 130%;
+		margin: 0 0 0 -13%;
+		overflow-y: scroll;
+		height: auto;
+	}
+
+	.main-nav li {
+		width: 100%;
+		padding: 0;
+		top: 0;
+	}
+
+	.main-nav li a {
+		width: 100%;
+		padding: 15px 2.5%;
+		min-height: auto;
+		line-height: 14px;
+	}
+
+	.main-nav li a:hover,
+	.main-nav li a:active {
+		background: rgba(255, 255, 255, 1);
+	}
 
 }
