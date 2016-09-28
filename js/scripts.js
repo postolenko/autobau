@@ -47,4 +47,72 @@ $(document).ready(function() {
     });
 
 
+    // ---------------------------------------------------------
+
+    //  Для Табов
+    // Определние активного таба при загрузке страницы
+
+    $(function() {
+
+        var countItemsTabMenuFor;
+        var countItemsTabMenu = $(".card_tab_link").length - 1;
+
+        var dataAttrTab;
+
+        for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
+
+                if( $(".card_tab_link:eq("+ countItemsTabMenuFor +")").hasClass("active") ) {
+
+                    dataAttrTab = $(".card_tab_link:eq("+ countItemsTabMenuFor +")").attr("for");
+
+                    for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
+
+                        if ( $(".card_tab:eq("+ countItemsTabMenuFor +")").attr("id") == dataAttrTab ) {
+
+                            $(".card_tab:eq("+ countItemsTabMenuFor +")").addClass("active");
+
+                        }
+
+                    }
+
+                }
+
+        }
+
+
+        $(".card_tab_link").click(function() {
+
+            if( !$(this).hasClass("active") ) {
+
+                $(".card_tab").removeClass("active");
+
+                $(".card_tab_link").not($(this)).removeClass("active");                             
+
+                $(this).toggleClass("active");
+
+            }
+
+        });
+
+    });
+
+// ---------------------------------------------------------
+
+    $(function() {
+
+        $(".slider-big .zoom-btn").click(function() {
+
+            $(".preview-box").fadeIn(300);
+
+        });
+
+        $(".preview-box .close-btn, .preview-box .preview-bg").click(function() {
+
+            $(".preview-box").fadeOut(300);
+
+        });
+
+    });
+
+
 });
