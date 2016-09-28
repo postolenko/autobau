@@ -98,11 +98,20 @@ $(document).ready(function() {
 
 // ---------------------------------------------------------
 
+    var indexProductPhoto;
+    var imgSrcAttr;
+
     $(function() {
 
         $(".slider-big .zoom-btn").click(function() {
 
             $(".preview-box").fadeIn(300);
+
+            indexProductPhoto = $(".slider-big .zoom-btn").index(this);
+
+            imgSrcAttr = $(".slider-big > div img:eq("+ indexProductPhoto +")").attr("src");
+
+            $(".preview-box img").attr("src", imgSrcAttr);
 
         });
 
