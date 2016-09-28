@@ -24,7 +24,7 @@ $(document).ready(function() {
 
         });
 
-        getMainNavLinkHeight()
+        // getMainNavLinkHeight();
 
 
     });
@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     var mainNavLinksHeightArr = [];
 
-    getMainNavLinkHeight();
+    // getMainNavLinkHeight();
 
     console.log(countMainNavLinks);
 
