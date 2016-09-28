@@ -109,7 +109,7 @@ $(document).ready(function() {
 
             indexProductPhoto = $(".slider-big .zoom-btn").index(this);
 
-            imgSrcAttr = $(".slider-big > div img:eq("+ indexProductPhoto +")").attr("src");
+            imgSrcAttr = $(".slider-big-item img:eq("+ indexProductPhoto +")").attr("src");
 
             $(".preview-box img").attr("src", imgSrcAttr);
 
