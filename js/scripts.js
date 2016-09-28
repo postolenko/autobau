@@ -16,9 +16,16 @@ $(document).ready(function() {
     $(window).resize(function() {
 
 
-        $(".wrapper").css({"min-height" : $(window).height() + "px"});
+        $(function() {
 
-        $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+            $(".wrapper").css({"min-height" : $(window).height() + "px"});
+
+            $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+        });
+
+        getMainNavLinkHeight()
+
 
     });
 
@@ -31,6 +38,39 @@ $(document).ready(function() {
 
     });
 
+
+    // ------------------------------------------------------
+
+
+    //  Задать одинаковую высоту колонок
+
+    var countMainNavLinks = $(".main-nav li a").length - 1;
+    var countMainNavLinksFor = 0;
+
+    var mainNavLinksHeightArr = [];
+
+    getMainNavLinkHeight();
+
+    console.log(countMainNavLinks);
+
+    function getMainNavLinkHeight() {
+
+        setTimeout(function() {
+
+            for (countMainNavLinksFor = 0; countMainNavLinksFor <= countMainNavLinks; countMainNavLinksFor++) {
+
+                mainNavLinksHeightArr.push($(".main-nav li a:eq("+ countMainNavLinksFor +")").height());
+
+            }
+
+            $(".main-nav li a").outerHeight(Math.max.apply(null, mainNavLinksHeightArr));
+
+        }, 700);        
+
+    }
+
+
+    // -----------------------------------------------------
 
     $(function() {
 
