@@ -1,19 +1,5 @@
 $(document).ready(function() {
 
-    //   preload
-    // $(window).on('load', function () {
-
-    //     setTimeout(function() {
-
-    //         $(".preload-bg").fadeOut(500);
-
-    //     }, 700);
-  
-
-    // });
-
-    getMainNavHeight();
-
 
     $(window).resize(function() {
 
@@ -54,8 +40,6 @@ $(document).ready(function() {
     var mainNavLinksHeightArr = [];
 
     // getMainNavLinkHeight();
-
-    console.log(countMainNavLinks);
 
     function getMainNavLinkHeight() {
 
@@ -105,21 +89,21 @@ $(document).ready(function() {
 
         for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
 
-                if( $(".card_tab_link:eq("+ countItemsTabMenuFor +")").hasClass("active") ) {
+            if( $(".card_tab_link:eq("+ countItemsTabMenuFor +")").hasClass("active") ) {
 
-                    dataAttrTab = $(".card_tab_link:eq("+ countItemsTabMenuFor +")").attr("for");
+                dataAttrTab = $(".card_tab_link:eq("+ countItemsTabMenuFor +")").attr("for");
 
-                    for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
+                for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
 
-                        if ( $(".card_tab:eq("+ countItemsTabMenuFor +")").attr("id") == dataAttrTab ) {
+                    if ( $(".card_tab:eq("+ countItemsTabMenuFor +")").attr("id") == dataAttrTab ) {
 
-                            $(".card_tab:eq("+ countItemsTabMenuFor +")").addClass("active");
-
-                        }
+                        $(".card_tab:eq("+ countItemsTabMenuFor +")").addClass("active");
 
                     }
 
                 }
+
+            }
 
         }
 
@@ -170,6 +154,8 @@ $(document).ready(function() {
 
 // ----------------------------------------------------------
 
+
+
     $(function() {
 
         $(".respmenubtn").click(function() {            
@@ -178,13 +164,13 @@ $(document).ready(function() {
 
             if( $(".respmenubtn").hasClass("active") ) {
 
-                $(".header-top-row .header-nav-col").css({"top" : -$(".header-top-row .header-nav-col").outerHeight(true) + 10 + "px" });
+                $(".header-top-row .header-nav-col").css({"top" : -1 * ( $(".header-top-row .header-search-responsive").outerHeight(true) + $(".main-nav").outerHeight(true) + 10 ) + "px" });
 
             }
 
             $(".respmenubtn").toggleClass("active");
 
-            getMainNavHeight();            
+            getMainNavHeight();
 
         });
 
@@ -199,6 +185,12 @@ $(document).ready(function() {
             $(".header-top-row .header-nav-col").height( $(window).height() - $(".logo-col").height() );
 
             $(".main-nav").height( $(".header-top-row .header-nav-col").height() - $(".header-search-responsive").height() );
+
+        }
+
+        if( !$(".respmenubtn").hasClass("active") ) {
+
+            $(".header-top-row .header-nav-col").css({"top" : -1 * ( $(".header-top-row .header-search-responsive").outerHeight(true) + $(".main-nav").outerHeight(true) + 10 ) + "px" });
 
         }
 
