@@ -1776,7 +1776,7 @@ a:active {
     .for-sale {
         display: inline-block;
         vertical-align: top;
-        padding: 14px 5px;
+        padding: 6px 5px 15px 5px;
         position: absolute;
         top: -6px;
         left: 3%;
